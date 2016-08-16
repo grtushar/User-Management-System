@@ -1,5 +1,10 @@
-angular.module('ESAssignment')
-    .controller('appRootController', function() {
+angular
+    .module('ESAssignment')
+    .controller('appRootController', constructor);
 
-    });
+constructor.$inject = [];
+        
+function constructor() {
+
+}
 
