@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="ESAssignment">
+<head>
+    <!--load bootstarp-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.7/angular-local-storage.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <!--contollers-->
+    <script src="app-root.controller.js"></script>
+    <script src="signin/controller/login.controller.js"></script>
+    <script src="signup/controller/register.controller.js"></script>
+    <script src="profile/controller/profile.controller.js"></script>
+
+    <!--services-->
+    <script src="signin/service/login.service.js"></script>
+    <script src="signin/service/login-rest.service.js"></script>
+    <script src="signup/service/register.service.js"></script>
+    <script src="signup/service/register-rest.service.js"></script>
+    <script src="profile/service/profile.service.js"></script>
+    <script src="profile/service/profile-rest.service.js"></script>
+
+    <title>User Management System</title>
+</head>
+
+<body ng-controller="appRootController">
+<div ui-view></div>
+</body>
+</html>

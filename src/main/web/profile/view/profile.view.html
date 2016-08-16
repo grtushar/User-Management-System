@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+            <button ng-click="vm.logout()" >Logout</button>
+            <br>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{vm.user.fullName}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                <tr>
+                                    <td>Full Name:</td>
+                                    <td>{{vm.user.fullName}}</td>
+                                </tr>
+                                <tr>
+                                    <td>UserId:</td>
+                                    <td>{{vm.user.userId}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>{{vm.user.dob | date : "dd-MM-yyyy"}}</td>
+                                </tr>
+
+                                <tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>{{vm.user.sex}}</td>
+                                </tr>
+                                <tr>
+                                    <td>About</td>
+                                    <td>{{vm.user.about}}</td>
+                                </tr>
+                                </td>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
